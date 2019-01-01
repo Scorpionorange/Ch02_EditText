@@ -16,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
     int size = 30;
 
     public void bigger(View v){
-        TextView txv = (TextView) findViewById(R.id.txv);
+        TextView txv = findViewById(R.id.txv);
         txv.setTextSize(++size);
     }
 
     public void smaller(View v){
         if(size > 10){
-            TextView txv = (TextView) findViewById(R.id.txv);
+            TextView txv = findViewById(R.id.txv);
             txv.setTextSize(--size);
         }
     }
